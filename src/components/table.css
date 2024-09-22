@@ -1,0 +1,60 @@
+#root {
+    max-width: 1280px;  /* Keeps the app layout centered */
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.table-container {
+    max-width: 100%;
+    overflow-x: auto;  /* Enable horizontal scrolling */
+}
+
+table {
+    width: 100%;                 /* Full width of the container */
+    border-collapse: collapse;    /* Clean border layout */
+    margin: 2rem 0;
+    font-size: 1rem;
+    font-family: 'Arial', sans-serif;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    white-space: nowrap;          /* Prevent content wrapping */
+}
+
+thead {
+    background-color: #f8f9fa;
+}
+
+thead th {
+    padding: 1rem;
+    background-color: #343a40;
+    color: white;
+    text-align: left;
+    font-weight: bold;
+}
+
+tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+tbody tr:nth-child(odd) {
+    background-color: #ffffff;
+}
+
+tbody td {
+    padding: 1rem;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+tbody tr:hover {
+    background-color: #e9ecef;    /* Hover effect for rows */
+}
+
+th, td {
+    border: 1px solid #ddd;
+}
+
+/* Pin hover style for rows */
+tbody tr.pinned {
+    background-color: #7FFFD4;    /* Pin row color */
+}
