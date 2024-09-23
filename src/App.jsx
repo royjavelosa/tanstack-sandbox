@@ -1,22 +1,29 @@
-// eslint-disable-next-line no-unused-vars
 import React from 'react';
 import SimpleTable from './components/SimpleTable';
 import PinHoverTable from './components/PinHoverTable';
-import './App.css'; 
 import GroupedTable from './components/GroupedTable';
+import Sidebar from './components/menu/Sidebar'; // Import the Sidebar component
+import './App.css'; // General app styles
 
-function App(){
+function App() {
   return (
     <div className="App">
-
-      <h1>TanStack Sandbox</h1>
-      <GroupedTable/>
-      ----------------
-      <SimpleTable/>
-      <PinHoverTable/>
-
+      <Sidebar /> {/* Include Sidebar here */}
+      <div className="main-content">
+        <h1>TanStack Sandbox</h1>
+        <div className="table-container">
+          <GroupedTable />
+        </div>
+        <div>----------------</div>
+        <div className="table-container">
+          <SimpleTable />
+        </div>
+        <div className="table-container">
+          <PinHoverTable />
+        </div>
+      </div>
     </div>
-  )
+  );
 }
 
 export default App;
